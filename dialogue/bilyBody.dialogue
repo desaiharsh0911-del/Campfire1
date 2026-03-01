@@ -1,0 +1,41 @@
+~ start
+
+if not GAME.talk_to_bilyBoy:
+	BilyBoy: Hey man, I'm the deputy chief of this old heap of junk next to me. His name is Richard and he's grumpy.
+	You: Ahhh... okay, I came here to repay him a debt.
+	BilyBoy: Ah, that's perfect! I can offer you some help! You can come if you need money! I'll offer you some quests!
+	do GAME.change_talk_to_bilyBoy(true)
+else:
+	if QUETE.current_quete == 0 and QUETE.get_price == 0:
+		do PERSONNAGE.set_state("BlilyBoy", "HAPPY")
+		BilyBoy: Here, some quests
+		- You earn 200 tokens if you win 2 times in a row at Blackjack.
+		do QUETE.set_new_quete(1)
+		- You earn 1000 tokens if you win 5 times in a row at Blackjack.
+		do QUETE.set_new_quete(2)
+		- You earn 5000 tokens if you win 7 times in a row at Blackjack.
+		do QUETE.set_new_quete(3)
+		- You earn 2000 tokens if you win 2 times in a row at the Slot Machine.
+		do QUETE.set_new_quete(4)
+		- You earn 10000 tokens if you win 5 times in a row at the Slot Machine.
+		do QUETE.set_new_quete(5)
+		- You earn 50000 tokens if you win 7 times in a row at the Slot Machine.
+		do QUETE.set_new_quete(6)
+		- Nothing!
+		do PERSONNAGE.set_state("BlilyBoy", "ANGRY")
+		elif QUETE.get_price != 0:
+			BilyBoy: You finished your quest, here’s your money...
+			do GAME._add_FCC(QUETE.get_all_price())
+			do QUETE.get_price = 0
+		else:
+			do PERSONNAGE.set_state("BlilyBoy", "ANGRY")
+			BilyBoy: You already have a quest. Finish it and then we’ll talk! Do you want to cancel it?
+			- Yes
+		do QUETE.emit_signal("cancel")
+		BilyBoy: Sad...
+		- No
+		BilyBoy: Then go complete it, you idiot!
+		
+
+
+=> END
