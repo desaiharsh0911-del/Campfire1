@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://ywchu4lyaft4"]
+[gd_scene load_steps=36 format=3 uid="uid://dnt7k1m8xugcw"]
 
 [ext_resource type="Script" path="res://Scenes/ScripteGame/game3.gd" id="1_tk3bh"]
 [ext_resource type="Texture2D" uid="uid://dbl45jxsu5es2" path="res://assets/background.png" id="2_j4rhn"]
@@ -274,7 +274,7 @@ theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_gj8qj")
 theme_override_font_sizes/font_size = 150
-text = "You Lost"
+text = "tu as Perdu"
 
 [node name="win" type="Label" parent="HUD/HUD"]
 visible = false
@@ -288,7 +288,7 @@ theme_override_colors/font_color = Color(0.439216, 0.678431, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_gj8qj")
 theme_override_font_sizes/font_size = 150
-text = "You Won"
+text = "Tu as Gagné"
 
 [node name="DownBetButton" type="TextureButton" parent="HUD/HUD"]
 layout_mode = 0
@@ -322,10 +322,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="TextureButton" parent="HUD/HUD"]
 layout_mode = 0
-offset_left = -782.0
-offset_top = 835.0
-offset_right = 222.0
-offset_bottom = 1063.0
+offset_left = -510.0
+offset_top = 566.0
+offset_right = 494.0
+offset_bottom = 794.0
 scale = Vector2(0.168, 0.168)
 texture_normal = ExtResource("24_ltf80")
 texture_pressed = ExtResource("25_6kj8x")
@@ -333,10 +333,10 @@ texture_hover = ExtResource("26_6domw")
 
 [node name="quete" parent="HUD/HUD" instance=ExtResource("25_ghddb")]
 layout_mode = 1
-offset_left = -966.0
-offset_top = 460.0
-offset_right = -966.432
-offset_bottom = 459.72
+offset_left = -562.0
+offset_top = 152.0
+offset_right = -562.432
+offset_bottom = 151.72
 scale = Vector2(0.549449, 0.549449)
 
 [node name="Popup" parent="HUD/HUD" instance=ExtResource("25_piwc6")]
@@ -346,6 +346,7 @@ offset_right = 701.0
 offset_bottom = 209.0
 
 [node name="loose" type="VideoStreamPlayer" parent="HUD/HUD"]
+visible = false
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
