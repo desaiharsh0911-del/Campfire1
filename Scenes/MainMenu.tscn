@@ -206,15 +206,15 @@ offset_top = 283.0
 offset_right = 1765.0
 offset_bottom = 1141.0
 scale = Vector2(0.106179, 0.106179)
-targetScene = "res://Scenes/shop.tscn"
+targetScene = "res://Scenes/Game2.tscn"
 
-[node name="shopLabel" type="Label" parent="HUD/HUD/marc5"]
+[node name="PachinkoLabel" type="Label" parent="HUD/HUD/marc5"]
 layout_mode = 0
-offset_left = -1243.18
-offset_top = 235.451
-offset_right = -828.181
-offset_bottom = 326.451
-scale = Vector2(7.10263, 7.10263)
+offset_left = -1224.35
+offset_top = 235.452
+offset_right = -809.349
+offset_bottom = 326.452
+scale = Vector2(7.26579, 7.26579)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_fonts/font = ExtResource("3_82bgv")

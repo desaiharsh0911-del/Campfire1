@@ -103,7 +103,7 @@ _data = {
 "quete_open": SubResource("Animation_lc7op")
 }
 
-[node name="Game3" type="Node2D"]
+[node name="Game2" type="Node2D"]
 position = Vector2(0, 3)
 script = ExtResource("1_ytt88")
 
