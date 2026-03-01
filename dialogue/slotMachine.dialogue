@@ -1,13 +1,13 @@
 ~ start
 
-Une machine qui parle: You don't have any more MONEY!! I am going to kill you now, following my boss' orders!
+A machine that speaks: You don't have any more MONEY!! I am going to kill you now, following my boss' orders!
 set GAME.emit_signal("kill")
 
 => END
 
 ~ PlusDeTemps
 
-Une machine qui parle: My boss gave you 1 hour... but time's up. DIE!
+A machine that speaks: My boss gave you 1 hour... but time's up. DIE!
 set GAME.emit_signal("kill")
 
 => END
