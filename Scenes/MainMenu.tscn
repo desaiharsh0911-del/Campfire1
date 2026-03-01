@@ -135,10 +135,11 @@ text = "0"
 
 [node name="marc" parent="HUD/HUD" instance=ExtResource("2_gvo85")]
 layout_mode = 0
-offset_left = 930.0
-offset_top = 50.0
-offset_right = 1764.0
-offset_bottom = 908.0
+offset_left = 919.0
+offset_top = 45.0
+offset_right = 1753.0
+offset_bottom = 903.0
+scale = Vector2(0.116098, 0.116098)
 targetScene = "res://Scenes/Game1.tscn"
 
 [node name="SlotMachineLabel" type="Label" parent="HUD/HUD/marc"]
@@ -156,10 +157,11 @@ text = "Slot Machine"
 
 [node name="marc2" parent="HUD/HUD" instance=ExtResource("2_gvo85")]
 layout_mode = 0
-offset_left = 930.0
-offset_top = 193.0
-offset_right = 1764.0
-offset_bottom = 1051.0
+offset_left = 927.0
+offset_top = 166.0
+offset_right = 1761.0
+offset_bottom = 1024.0
+scale = Vector2(0.110267, 0.110267)
 targetScene = "res://Scenes/Game3.tscn"
 
 [node name="BlackJackLabel" type="Label" parent="HUD/HUD/marc2"]
@@ -178,9 +180,10 @@ text = "Black Jack"
 [node name="marc3" parent="HUD/HUD" instance=ExtResource("2_gvo85")]
 layout_mode = 0
 offset_left = 930.0
-offset_top = 338.0
+offset_top = 392.0
 offset_right = 1764.0
-offset_bottom = 1196.0
+offset_bottom = 1250.0
+scale = Vector2(0.106179, 0.106179)
 targetScene = "res://Scenes/shop.tscn"
 
 [node name="shopLabel" type="Label" parent="HUD/HUD/marc3"]
@@ -196,13 +199,35 @@ theme_override_fonts/font = ExtResource("3_82bgv")
 theme_override_font_sizes/font_size = 44
 text = "Shop"
 
+[node name="marc5" parent="HUD/HUD" instance=ExtResource("2_gvo85")]
+layout_mode = 0
+offset_left = 931.0
+offset_top = 283.0
+offset_right = 1765.0
+offset_bottom = 1141.0
+scale = Vector2(0.106179, 0.106179)
+targetScene = "res://Scenes/shop.tscn"
+
+[node name="shopLabel" type="Label" parent="HUD/HUD/marc5"]
+layout_mode = 0
+offset_left = -1243.18
+offset_top = 235.451
+offset_right = -828.181
+offset_bottom = 326.451
+scale = Vector2(7.10263, 7.10263)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_fonts/font = ExtResource("3_82bgv")
+theme_override_font_sizes/font_size = 44
+text = "Pachinko"
+
 [node name="TextureRect2" type="TextureRect" parent="HUD/HUD"]
 layout_mode = 0
-offset_left = 43.0
-offset_top = 303.0
-offset_right = 1745.0
-offset_bottom = 1311.0
-scale = Vector2(0.240108, 0.240108)
+offset_left = 145.0
+offset_top = 269.0
+offset_right = 1847.0
+offset_bottom = 1277.0
+scale = Vector2(0.196915, 0.299103)
 texture = ExtResource("6_i6tu0")
 
 [node name="marc4" type="TextureButton" parent="HUD/HUD"]
