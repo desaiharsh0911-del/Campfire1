@@ -142,7 +142,7 @@ func _update_FCC(new_value):
 func _process(_delta):
 	if owner.target == \"shop\":
 		var time = str(round(GAME.get_time_left()))
-		pre.set_text(\"temps restant : \" + time)
+		pre.set_text(\"Time Remaining : \" + time)
 	else:
 		pre.set_visible(false)
 "
