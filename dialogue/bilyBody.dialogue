@@ -1,6 +1,6 @@
 ~ start
 
-if not GAME.talk_to_bilyBoy:
+if not GAME.talk_to_bBilyBoy:
 	BilyBoy: Hey man, I'm the deputy chief of this old heap of junk next to me. His name is Richard and he's grumpy.
 	You: Ahhh... okay, I came here to repay him a debt.
 	BilyBoy: Ah, that's perfect! I can offer you some help! You can come if you need money! I'll offer you some quests!
