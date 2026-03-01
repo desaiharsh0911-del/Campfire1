@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://bubr2j4jqn42a"]
+[gd_scene load_steps=35 format=3 uid="uid://bubr2j4jqn42a"]
 
 [ext_resource type="Script" path="res://Scenes/ScripteGame/game3.gd" id="1_ytt88"]
 [ext_resource type="Texture2D" uid="uid://dbl45jxsu5es2" path="res://assets/background.png" id="2_m3r7v"]
@@ -103,7 +103,10 @@ _data = {
 "quete_open": SubResource("Animation_lc7op")
 }
 
-[node name="Game3" type="Node2D"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nquls"]
+size = Vector2(503.744, 10.0539)
+
+[node name="Game2" type="Node2D"]
 position = Vector2(0, 3)
 script = ExtResource("1_ytt88")
 
@@ -113,7 +116,6 @@ scale = Vector2(0.656785, 0.522581)
 texture = ExtResource("2_m3r7v")
 
 [node name="Jack" type="AnimatedSprite2D" parent="."]
-visible = false
 position = Vector2(565, 240)
 scale = Vector2(0.255407, 0.255407)
 sprite_frames = SubResource("SpriteFrames_ww0k1")
@@ -165,28 +167,6 @@ theme_override_font_sizes/font_size = 50
 text = "0"
 horizontal_alignment = 2
 
-[node name="Label3" type="Label" parent="HUD/HUD"]
-visible = false
-layout_mode = 0
-offset_left = 165.0
-offset_top = 218.0
-offset_right = 395.0
-offset_bottom = 286.0
-theme_override_fonts/font = ExtResource("11_6hxmh")
-theme_override_font_sizes/font_size = 50
-text = "0"
-
-[node name="Label4" type="Label" parent="HUD/HUD"]
-visible = false
-layout_mode = 0
-offset_left = 743.0
-offset_top = 135.0
-offset_right = 973.0
-offset_bottom = 203.0
-theme_override_fonts/font = ExtResource("11_6hxmh")
-theme_override_font_sizes/font_size = 50
-text = "0"
-
 [node name="HomeButton" parent="HUD/HUD" instance=ExtResource("12_ot1kh")]
 layout_mode = 0
 offset_left = 915.0
@@ -227,7 +207,7 @@ offset_left = 370.0
 offset_top = 18.0
 offset_right = 1108.0
 offset_bottom = 191.0
-scale = Vector2(0.550415, 0.590415)
+scale = Vector2(0.524119, 0.335462)
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("11_6hxmh")
@@ -310,6 +290,20 @@ wait_time = 2.0
 libraries = {
 "": SubResource("AnimationLibrary_1yk74")
 }
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="Side_left" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(321.418, 306.051)
+rotation = -1.30973
+scale = Vector2(0.905346, 2.16785)
+shape = SubResource("RectangleShape2D_nquls")
+
+[node name="Side_right" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(826, 317)
+rotation = 1.3126
+scale = Vector2(0.905346, 2.16785)
+shape = SubResource("RectangleShape2D_nquls")
 
 [connection signal="button_down" from="HUD/HUD/startbutton" to="." method="_on_startbutton_button_down"]
 [connection signal="button_down" from="HUD/HUD/DownBetButton" to="." method="_on_down_bet_button_button_down"]
