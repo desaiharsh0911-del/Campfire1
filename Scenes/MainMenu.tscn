@@ -143,16 +143,16 @@ targetScene = "res://Scenes/Game1.tscn"
 
 [node name="SlotMachineLabel" type="Label" parent="HUD/HUD/marc"]
 layout_mode = 0
-offset_left = -1833.33
-offset_top = 273.333
-offset_right = -1418.33
-offset_bottom = 364.333
+offset_left = -1606.67
+offset_top = 286.667
+offset_right = -1191.67
+offset_bottom = 377.667
 scale = Vector2(6.52165, 6.52165)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_fonts/font = ExtResource("3_82bgv")
 theme_override_font_sizes/font_size = 44
-text = "Machine a sous"
+text = "Slot Machine"
 
 [node name="marc2" parent="HUD/HUD" instance=ExtResource("2_gvo85")]
 layout_mode = 0
@@ -185,16 +185,16 @@ targetScene = "res://Scenes/shop.tscn"
 
 [node name="shopLabel" type="Label" parent="HUD/HUD/marc3"]
 layout_mode = 0
-offset_left = -1293.33
+offset_left = -733.333
 offset_top = 240.0
-offset_right = -878.333
+offset_right = -318.336
 offset_bottom = 331.0
 scale = Vector2(7.10263, 7.10263)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_fonts/font = ExtResource("3_82bgv")
 theme_override_font_sizes/font_size = 44
-text = "Comptoir"
+text = "Shop"
 
 [node name="TextureRect2" type="TextureRect" parent="HUD/HUD"]
 layout_mode = 0
@@ -221,23 +221,23 @@ flip_v = true
 
 [node name="Label3" type="Label" parent="HUD/HUD/marc4"]
 layout_mode = 0
-offset_left = -3006.28
-offset_top = 231.253
-offset_right = -2387.28
-offset_bottom = 322.253
+offset_left = -2155.27
+offset_top = 249.753
+offset_right = -1536.27
+offset_bottom = 340.753
 scale = Vector2(4.67404, 4.67404)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_fonts/font = ExtResource("3_82bgv")
 theme_override_font_sizes/font_size = 78
-text = "reinitialiser le jeu"
+text = "Restart Game"
 
 [node name="Button" type="TextureButton" parent="HUD/HUD"]
 layout_mode = 0
-offset_left = -2.0
-offset_top = 568.0
-offset_right = 1002.0
-offset_bottom = 796.0
+offset_left = 1488.0
+offset_top = 617.0
+offset_right = 2492.0
+offset_bottom = 845.0
 scale = Vector2(0.25, 0.25)
 texture_normal = ExtResource("10_gbdjt")
 texture_pressed = ExtResource("11_up3b3")
@@ -245,10 +245,10 @@ texture_hover = ExtResource("12_e2xjm")
 
 [node name="quete" parent="HUD/HUD" instance=ExtResource("10_ysr28")]
 layout_mode = 1
-offset_left = -266.0
-offset_top = 104.0
-offset_right = -266.432
-offset_bottom = 103.72
+offset_left = 1574.0
+offset_top = 314.0
+offset_right = 1573.57
+offset_bottom = 313.72
 scale = Vector2(0.549449, 0.549449)
 
 [node name="TextureButton" type="TextureButton" parent="HUD/HUD"]
@@ -278,7 +278,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_fonts/font = ExtResource("3_82bgv")
 theme_override_font_sizes/font_size = 56
-text = "quitter"
+text = "quit"
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 position = Vector2(593, 7)
@@ -289,7 +289,7 @@ lifetime = 5.0
 
 [node name="Money" type="Sprite2D" parent="."]
 position = Vector2(135, 202)
-scale = Vector2(0.075, 0.075)
+scale = Vector2(0.125, 0.125)
 texture = ExtResource("5_2ccat")
 
 [node name="Coin" type="Sprite2D" parent="."]

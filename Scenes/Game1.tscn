@@ -1,11 +1,10 @@
-[gd_scene load_steps=38 format=3 uid="uid://c4axo3qsl7dbk"]
+[gd_scene load_steps=37 format=3 uid="uid://c4axo3qsl7dbk"]
 
 [ext_resource type="Texture2D" uid="uid://dbl45jxsu5es2" path="res://assets/background.png" id="1_5ulmi"]
 [ext_resource type="Script" path="res://Scenes/ScripteGame/Game1.gd" id="1_33qnf"]
 [ext_resource type="Texture2D" uid="uid://bq2u5xcwkk8o4" path="res://assets/casino.png" id="2_tpdx1"]
 [ext_resource type="PackedScene" uid="uid://bvfeapmaqbrw3" path="res://Scenes/ScripteGame/colun.tscn" id="3_4w6go"]
 [ext_resource type="FontFile" uid="uid://bkon3tj4yjn5a" path="res://assets/font.otf" id="4_iruf3"]
-[ext_resource type="Texture2D" uid="uid://c1qlxkdnkx0wn" path="res://assets/Money_shadow.png" id="4_xrlq2"]
 [ext_resource type="Texture2D" uid="uid://bqv0ky7ym4o1i" path="res://assets/separator.png" id="5_33ep3"]
 [ext_resource type="Script" path="res://Scenes/ScripteGame/HUD.gd" id="8_vndb3"]
 [ext_resource type="Texture2D" uid="uid://dw30ergdo7mbx" path="res://assets/Money.png" id="9_tgqhj"]
@@ -169,15 +168,8 @@ texture = ExtResource("5_33ep3")
 [node name="Money" type="Sprite2D" parent="Casino"]
 y_sort_enabled = true
 position = Vector2(-962.222, -593.333)
-scale = Vector2(0.158, 0.158)
+scale = Vector2(0.3, 0.3)
 texture = ExtResource("9_tgqhj")
-
-[node name="MoneyShadow" type="Sprite2D" parent="Casino/Money"]
-modulate = Color(0, 0, 0, 0.254902)
-position = Vector2(393.812, -38.9181)
-scale = Vector2(2.03, 2.03)
-texture = ExtResource("4_xrlq2")
-offset = Vector2(-250, 0)
 
 [node name="particule_casino" parent="." instance=ExtResource("29_21tvv")]
 position = Vector2(480, 0)
@@ -190,6 +182,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = -1152.0
+offset_bottom = -648.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("8_vndb3")
@@ -294,10 +288,10 @@ texture = ExtResource("20_4hhua")
 
 [node name="Button2" type="TextureButton" parent="HUD/HUD"]
 layout_mode = 0
-offset_left = -1.0
-offset_top = 592.0
-offset_right = 1003.0
-offset_bottom = 820.0
+offset_left = -847.0
+offset_top = 669.0
+offset_right = 157.0
+offset_bottom = 897.0
 scale = Vector2(0.168, 0.168)
 texture_normal = ExtResource("21_kvtif")
 texture_pressed = ExtResource("22_go0vd")
@@ -305,10 +299,10 @@ texture_hover = ExtResource("23_unoja")
 
 [node name="quete" parent="HUD/HUD" instance=ExtResource("21_g0vm1")]
 layout_mode = 1
-offset_left = -266.0
-offset_top = 104.0
-offset_right = -266.0
-offset_bottom = 104.0
+offset_left = -1104.0
+offset_top = 157.0
+offset_right = -1104.0
+offset_bottom = 157.0
 scale = Vector2(0.549449, 0.549449)
 
 [node name="Popup" parent="HUD/HUD" instance=ExtResource("22_76wn5")]

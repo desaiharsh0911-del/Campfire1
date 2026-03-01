@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bjak8474fpo7w"]
+[gd_scene load_steps=15 format=3 uid="uid://bjak8474fpo7w"]
 
 [ext_resource type="Texture2D" uid="uid://deg84jy8na1f6" path="res://assets/button/home_buton.png" id="1_6of7q"]
 [ext_resource type="FontFile" uid="uid://bkon3tj4yjn5a" path="res://assets/font.otf" id="1_klwqy"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://7b41bmcejr42" path="res://assets/font_shop.png" id="2_pgac2"]
 [ext_resource type="Texture2D" uid="uid://c30l0yhru0ciu" path="res://assets/button/home_buton_hover.png" id="3_ujnlg"]
 [ext_resource type="Texture2D" uid="uid://dw30ergdo7mbx" path="res://assets/Money.png" id="7_apoa8"]
+[ext_resource type="Texture2D" uid="uid://cqphm6fyypimc" path="res://assets/logo.png" id="8_at5j5"]
 
 [sub_resource type="Gradient" id="Gradient_kt5ry"]
 offsets = PackedFloat32Array(0.568627, 1)
@@ -106,7 +107,7 @@ offset_bottom = 94.0
 theme_override_colors/font_color = Color(0.294118, 0.505882, 1, 1)
 theme_override_fonts/font = ExtResource("1_klwqy")
 theme_override_font_sizes/font_size = 50
-text = "Victoire"
+text = "Victory"
 metadata/_edit_use_anchors_ = true
 
 [node name="Label2" type="Label" parent="CanvasLayer/Control"]
@@ -132,7 +133,7 @@ offset_bottom = 675.0
 scale = Vector2(0.478289, 0.478289)
 theme_override_fonts/font = ExtResource("1_klwqy")
 theme_override_font_sizes/font_size = 70
-text = "Jeu fait par Fish Canard"
+text = "A Game made for Hackclub Campfire Ottawa '26"
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control"]
 layout_mode = 0
@@ -154,8 +155,8 @@ lifetime = 5.0
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(582, 437)
-scale = Vector2(0.2, 0.2)
-texture = ExtResource("7_apoa8")
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("8_at5j5")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {

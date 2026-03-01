@@ -333,21 +333,22 @@ texture = ExtResource("8_nntts")
 
 [node name="SwitchButton" type="TextureButton" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_left = 275.0
-offset_top = 445.0
-offset_right = 787.0
-offset_bottom = 957.0
+offset_left = 1339.0
+offset_top = 776.0
+offset_right = 1851.0
+offset_bottom = 1288.0
 scale = Vector2(0.3, 0.3)
+disabled = true
 texture_normal = ExtResource("6_710c1")
 texture_pressed = ExtResource("11_vwfwn")
 texture_hover = ExtResource("12_chqju")
 
 [node name="SwitchButton2" type="TextureButton" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_left = 737.0
-offset_top = 439.0
-offset_right = 1249.0
-offset_bottom = 951.0
+offset_left = 1269.0
+offset_top = 671.0
+offset_right = 1781.0
+offset_bottom = 1183.0
 scale = Vector2(0.3, 0.3)
 texture_normal = ExtResource("6_710c1")
 texture_pressed = ExtResource("11_vwfwn")
@@ -367,10 +368,10 @@ texture_hover = ExtResource("15_3qelm")
 
 [node name="Button2" type="TextureButton" parent="CanvasLayer/Control"]
 layout_mode = 0
-offset_left = -2.0
-offset_top = 582.0
-offset_right = 1002.0
-offset_bottom = 810.0
+offset_left = 1363.0
+offset_top = 771.0
+offset_right = 2367.0
+offset_bottom = 999.0
 scale = Vector2(0.2, 0.2)
 texture_normal = ExtResource("24_irohy")
 texture_pressed = ExtResource("25_pohh5")
