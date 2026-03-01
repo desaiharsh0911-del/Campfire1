@@ -281,8 +281,8 @@ texture_hover = ExtResource("19_t0v3j")
 layout_mode = 0
 offset_left = 715.0
 offset_top = 6.0
-offset_right = 2417.0
-offset_bottom = 1014.0
+offset_right = 2098.0
+offset_bottom = 906.0
 scale = Vector2(0.0694065, 0.101094)
 texture = ExtResource("20_4hhua")
 
