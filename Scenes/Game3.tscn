@@ -274,7 +274,7 @@ theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_gj8qj")
 theme_override_font_sizes/font_size = 150
-text = "tu as Perdu"
+text = "You lose"
 
 [node name="win" type="Label" parent="HUD/HUD"]
 visible = false
@@ -288,7 +288,7 @@ theme_override_colors/font_color = Color(0.439216, 0.678431, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("3_gj8qj")
 theme_override_font_sizes/font_size = 150
-text = "Tu as Gagné"
+text = "You win"
 
 [node name="DownBetButton" type="TextureButton" parent="HUD/HUD"]
 layout_mode = 0
