@@ -230,10 +230,10 @@ text = "Restart Game"
 
 [node name="Button" type="TextureButton" parent="HUD/HUD"]
 layout_mode = 0
-offset_left = -2.0
-offset_top = 568.0
-offset_right = 1002.0
-offset_bottom = 796.0
+offset_left = 1488.0
+offset_top = 617.0
+offset_right = 2492.0
+offset_bottom = 845.0
 scale = Vector2(0.25, 0.25)
 texture_normal = ExtResource("10_gbdjt")
 texture_pressed = ExtResource("11_up3b3")
@@ -241,10 +241,10 @@ texture_hover = ExtResource("12_e2xjm")
 
 [node name="quete" parent="HUD/HUD" instance=ExtResource("10_ysr28")]
 layout_mode = 1
-offset_left = -266.0
-offset_top = 104.0
-offset_right = -266.432
-offset_bottom = 103.72
+offset_left = 1574.0
+offset_top = 314.0
+offset_right = 1573.57
+offset_bottom = 313.72
 scale = Vector2(0.549449, 0.549449)
 
 [node name="TextureButton" type="TextureButton" parent="HUD/HUD"]
@@ -285,7 +285,7 @@ lifetime = 5.0
 
 [node name="Money" type="Sprite2D" parent="."]
 position = Vector2(135, 202)
-scale = Vector2(0.075, 0.075)
+scale = Vector2(0.125, 0.125)
 texture = ExtResource("5_2ccat")
 
 [node name="Coin" type="Sprite2D" parent="."]
