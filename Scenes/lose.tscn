@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://dxfr84fy4n1ct"]
+[gd_scene load_steps=15 format=3 uid="uid://dxfr84fy4n1ct"]
 
 [ext_resource type="Texture2D" uid="uid://7b41bmcejr42" path="res://assets/font_shop.png" id="1_uyce1"]
 [ext_resource type="Script" path="res://Scenes/ScripteGame/win.gd" id="1_vgcw5"]
 [ext_resource type="Texture2D" uid="uid://deg84jy8na1f6" path="res://assets/button/home_buton.png" id="2_vanv8"]
 [ext_resource type="Texture2D" uid="uid://cp5jm34hn3m1n" path="res://assets/button/home_buton_pressed.png" id="3_vgyy8"]
 [ext_resource type="Texture2D" uid="uid://c30l0yhru0ciu" path="res://assets/button/home_buton_hover.png" id="4_pr3ck"]
+[ext_resource type="Texture2D" uid="uid://cqphm6fyypimc" path="res://assets/logo.png" id="4_qrhry"]
 [ext_resource type="FontFile" uid="uid://bkon3tj4yjn5a" path="res://assets/font.otf" id="5_qwt0u"]
 [ext_resource type="Texture2D" uid="uid://dw30ergdo7mbx" path="res://assets/Money.png" id="7_uie6c"]
 
@@ -80,8 +81,8 @@ lifetime = 5.0
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(582, 437)
-scale = Vector2(0.141327, 0.141327)
-texture = ExtResource("7_uie6c")
+scale = Vector2(0.35, 0.35)
+texture = ExtResource("4_qrhry")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -108,7 +109,7 @@ offset_bottom = 94.0
 theme_override_colors/font_color = Color(1, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_qwt0u")
 theme_override_font_sizes/font_size = 50
-text = "Perdu"
+text = "You Lost"
 metadata/_edit_use_anchors_ = true
 
 [node name="marc" type="TextureButton" parent="CanvasLayer/Control"]
@@ -149,9 +150,10 @@ offset_bottom = 619.0
 scale = Vector2(0.478289, 0.475835)
 theme_override_fonts/font = ExtResource("5_qwt0u")
 theme_override_font_sizes/font_size = 70
-text = "Jeu fait par Fish Canard"
+text = "A game made for Hackclub Campfire Ottawa '26"
 
 [node name="ColorRect" type="ColorRect" parent="CanvasLayer/Control"]
+visible = false
 layout_mode = 0
 offset_right = 1152.0
 offset_bottom = 649.0
