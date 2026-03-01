@@ -139,16 +139,16 @@ targetScene = "res://Scenes/Game1.tscn"
 
 [node name="SlotMachineLabel" type="Label" parent="HUD/HUD/marc"]
 layout_mode = 0
-offset_left = -1833.33
-offset_top = 273.333
-offset_right = -1418.33
-offset_bottom = 364.333
+offset_left = -1606.67
+offset_top = 286.667
+offset_right = -1191.67
+offset_bottom = 377.667
 scale = Vector2(6.52165, 6.52165)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_fonts/font = ExtResource("3_82bgv")
 theme_override_font_sizes/font_size = 44
-text = "Machine a sous"
+text = "Slot Machine"
 
 [node name="marc2" parent="HUD/HUD" instance=ExtResource("2_gvo85")]
 layout_mode = 0
@@ -181,16 +181,16 @@ targetScene = "res://Scenes/shop.tscn"
 
 [node name="shopLabel" type="Label" parent="HUD/HUD/marc3"]
 layout_mode = 0
-offset_left = -1293.33
+offset_left = -733.333
 offset_top = 240.0
-offset_right = -878.333
+offset_right = -318.336
 offset_bottom = 331.0
 scale = Vector2(7.10263, 7.10263)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_fonts/font = ExtResource("3_82bgv")
 theme_override_font_sizes/font_size = 44
-text = "Comptoir"
+text = "Shop"
 
 [node name="TextureRect2" type="TextureRect" parent="HUD/HUD"]
 layout_mode = 0
