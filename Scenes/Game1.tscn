@@ -279,11 +279,11 @@ texture_hover = ExtResource("19_t0v3j")
 
 [node name="TextureRect2" type="TextureRect" parent="HUD/HUD"]
 layout_mode = 0
-offset_left = 712.0
-offset_top = 9.0
-offset_right = 2414.0
-offset_bottom = 1017.0
-scale = Vector2(0.0958819, 0.0958819)
+offset_left = 715.0
+offset_top = 6.0
+offset_right = 2098.0
+offset_bottom = 906.0
+scale = Vector2(0.0694065, 0.101094)
 texture = ExtResource("20_4hhua")
 
 [node name="Button2" type="TextureButton" parent="HUD/HUD"]
