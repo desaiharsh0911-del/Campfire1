@@ -17,6 +17,7 @@ func _on_pressed():
 "
 
 [node name="CinematiqueStart" type="Node2D"]
+visible = false
 script = ExtResource("1_hr6e4")
 
 [node name="HUD" type="CanvasLayer" parent="."]

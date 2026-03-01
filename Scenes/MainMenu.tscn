@@ -217,16 +217,16 @@ flip_v = true
 
 [node name="Label3" type="Label" parent="HUD/HUD/marc4"]
 layout_mode = 0
-offset_left = -3006.28
-offset_top = 231.253
-offset_right = -2387.28
-offset_bottom = 322.253
+offset_left = -2155.27
+offset_top = 249.753
+offset_right = -1536.27
+offset_bottom = 340.753
 scale = Vector2(4.67404, 4.67404)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_fonts/font = ExtResource("3_82bgv")
 theme_override_font_sizes/font_size = 78
-text = "reinitialiser le jeu"
+text = "Restart Game"
 
 [node name="Button" type="TextureButton" parent="HUD/HUD"]
 layout_mode = 0
@@ -274,7 +274,7 @@ theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 4
 theme_override_fonts/font = ExtResource("3_82bgv")
 theme_override_font_sizes/font_size = 56
-text = "quitter"
+text = "quit"
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 position = Vector2(593, 7)
