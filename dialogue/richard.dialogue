@@ -1,134 +1,134 @@
 ~ start
 
 if not GAME.has_talk_to_richard:
-	Richard: Enfin, tu arrives ! J'espère que tu as mon fric ! Mes pauvres petits 10 000 $ !!!
-	You: Heureux de te revoir aussi, Richard ! Je suis venu ici avec 100 $ ! Je voudrais jouer dans ton casino pour rembourser ma dette.
+	Richard: At last, you arrive! I hope that you have my moolah! My $10 000!!!
+	You: Nice to meet you too, Richard! I came here with a $100! I would like to play in your casino to reimbourse my debt.
 	do PERSONNAGE.set_state("Richard", "ANGRY")
-	Richard: Cette histoire commence sérieusement à me casser les pieds ! Je te laisse 1 heure pour rembourser cette dette à tes risques et périls !!! 
-	You: Je préfère ne rien savoir, jouer et te rembourser dans le plus grand calme. Ni problème ni querelle !
+	Richard: This story is seriously getting out of hand! I am giving you 1 hour to reimbourse my debts at your risk!!! 
+	You: I prefer to play and reimbourse your money. No problem no fighting!
 	do PERSONNAGE.set_state("Richard", "HAPPY")
-	Richard: Mouais... bon, que veux-tu ?
+	Richard: Yeah right, what do you want?
 	do GAME.change_talk_to_richard(true)
 else:
 
 	do PERSONNAGE.set_state("Richard", "HAPPY")
-	Richard: [[C'est bon, tu as la moula ??|Tu viens me rendre mon blé ?|AAAAAhhhhhhh, tu as enfin le pognon..]] Je savais que je pouvais compter sur toi ! 
-	You: Alors heuuuuu, je n'ai pas ton argent, mais...
+	Richard: [[That's good, you have the money??| Are you here to give me my money?|AAAAAhhhhhhh, you finally have the money..]] I knew that I could count on you! 
+	You: Sooooooo, about that, I don't have your money, but...
 	 
-You: heuu...
-- Je pourrais avoir des jetons ?
-	Richard: Aller, tu en veux combien ?
-	- 500 jetons pour 50 $
+You: Ummmmmm...
+- Can I have tokens?
+	Richard: All right, how many do you want?
+	- 500 tokens for $50
 		if GAME.get_money() - 50 >= 0: 
 			do GAME._add_FCC(500)
 			do GAME._substract_money(50)
-			Richard: Seulement 500 ? Mais t'as pas un rond !!
+			Richard: Only 500? But you don't have a single penny to your name!!
 		else:
 			do PERSONNAGE.set_state("Richard", "ANGRY")
-			Richard: Tu veux m'arnaquer, sale idiot.
-	- 1000 jetons pour 100 $
+			Richard: You try to rip me off, dirty idiot.
+	- 1000 tokens for $100
 		if GAME.get_money() - 100 >= 0: 
 			do GAME._add_FCC(1000)
 			do GAME._substract_money(100)
-			Richard: Vas pour 1000, à très vite avec mon argent.
+			Richard: Here for a 1000, come back quickly with my money.
 		else:
 			do PERSONNAGE.set_state("Richard", "ANGRY")
-			Richard: Tu veux m'arnaquer, sale idiot.
-	- 5000 jetons pour 500 $
+			Richard: You try to rip me off, dirty idiot.
+	- 5000 tokens for $500
 		if GAME.get_money() - 500 >= 0: 
 			do GAME._add_FCC(5000)
 			do GAME._substract_money(500)
-			Richard: Vas pour 5000, à très vite avec mon argent.
+			Richard: Here for 5000, come back quickly with my money.
 		else:
 			do PERSONNAGE.set_state("Richard", "ANGRY")
-			Richard: Tu veux m'arnaquer, sale idiot.
-	- 10000 jetons pour 1000 $
+			Richard: You try to rip me off, dirty idiot.
+	- 10000 tokens for $1000
 		if GAME.get_money() - 1000 >= 0: 
 			do GAME._add_FCC(10000)
 			do GAME._substract_money(1000)
-			Richard: Vas pour 10000, à très vite avec mon argent.
+			Richard: Here for 10000, come back quickly with my money.
 		else:
 			do PERSONNAGE.set_state("Richard", "ANGRY")
-			Richard: Tu veux m'arnaquer, sale idiot.
-	- Pour tout mon argent !
+			Richard: You try to rip me off, dirty idiot.
+	- For all of my money!
 		if GAME.get_money() > 0:
 			do GAME._add_FCC(GAME.get_money() * 10)
 			do GAME._substract_money(GAME.get_money())
-			Richard: Ok, let's gooo. Tu a intérêt à gagner.
+			Richard: Ok, let's gooo. You better win.
 		else:
 			do PERSONNAGE.set_state("Richard", "ANGRY")
-			Richard: Tu n'as plus un sou, sale fou !
-- Je pourrais échanger mes jetons ? 
-	Richard: Tu veux te refaire de la thune !! C'est pour me rembourser, j'espère... Tu veux échanger combien de jetons ??
-	- 50 $ pour 500 jetons
+			Richard: You don't have anymore money, dirty fool!
+- Can I exchange my tokens? 
+	Richard: You want to make some more money!! I hope it's too reimbourse me... How many tokens do you want to exchange??
+	- $50 for 500 tokens
 		if GAME.get_FCC() - 500 >= 0:
 			do GAME._add_money(50)
 			do GAME._substract_FCC(500)
-			Richard: Vas pour 50 $, à très vite avec mon argent.
+			Richard: Here for $50, come back quickly with my money.
 		else:
 			do PERSONNAGE.set_state("Richard", "ANGRY")
-			Richard: Tu veux m'arnaquer, sale idiot.
-	- 100 $ pour 1000 jetons
+			Richard: You try to rip me off, dirty idiot.
+	- $100 for a 1 000 tokens
 		if GAME.get_FCC() - 1000 >= 0:
 			do GAME._add_money(100)
 			do GAME._substract_FCC(1000)
-			Richard: Vas pour 100 $, à très vite avec mon argent.
+			Richard: Here for $100, come back quickly with my money.
 		else:
 			do PERSONNAGE.set_state("Richard", "ANGRY")
-			Richard: Tu veux m'arnaquer, sale idiot.
-	- 500 $ pour 5000 jetons
+			Richard: You try to rip me off, dirty idiot.
+	- $500 for 5 000 tokens
 		if GAME.get_FCC() - 5000 >= 0:
 			do GAME._add_money(500)
 			do GAME._substract_FCC(5000)
-			Richard: Vas pour 500 $, à très vite avec mon argent.
+			Richard: Here for $500, come back quickly with my money.
 		else:
 			do PERSONNAGE.set_state("Richard", "ANGRY")
-			Richard: Tu veux m'arnaquer, sale idiot.
-	- 1000 $ pour 10000 jetons
+			Richard: You try to rip me off, dirty idiot.
+	- $1 000 for 10 000 tokens
 		if GAME.get_FCC() - 1000 >= 0:
 			do GAME._add_money(1000)
 			do GAME._substract_FCC(10000)
-			Richard: Vas pour 1000 $, à très vite avec mon argent.
+			Richard: Here for $1 000, come back quickly with my money.
 		else:
 			do PERSONNAGE.set_state("Richard", "ANGRY")
-			Richard: Tu veux m'arnaquer, sale idiot.
-	- Pour tous mes jetons !
+			Richard: You try to rip me off, dirty idiot.
+	- For all of my tokens!
 		if GAME.get_FCC() > 0:
 			do GAME._add_money(GAME.get_FCC() / 10)
 			do GAME._substract_FCC(GAME.get_FCC())
-			Richard: TOUT ? heuuu ok...
+			Richard: ALL? ooooo ok ...
 		else:
 			do PERSONNAGE.set_state("Richard", "ANGRY")
-			Richard: Tu n'as plus de jetons, sale fou !
-- Je m'en fous de ma dette!!!
+			Richard: You don't have anymore tokens, dirty fool!
+- I don't care about your debt!!!
 	do PERSONNAGE.set_state("Richard", "ANGRY")
-	Richard: ALOOOORS, JAMAIS ON NE M'AVAIT PARLÉ COMME ÇA. TU VAS PASSER UN SALE QUART D'HEURE !!!!!
+	Richard: I SEEEEE, NEVER TALK TO ME LIKE THAT. YOU'RE IN FOR A ROUGH QUARTER HOUR!!!!!
 	do GAME.emit_signal("kill")
-- Je voudrais rembourser ma dette !
+- I want to reimbourse my debt!
 	if GAME.get_money() >= 10000: 
-		Richard: ENFIN !!! Pas trop tôt !!! Je commençais à m'impatienter, moi ! Mais bon, tu me les as remboursés !
-		You: C'est avec plaisir !!! Maintenant je peux rentrer et jouer à Valo et rank-up Iron II.
-		Richard: Sale noob !
+		Richard: AT LAST!!! Not too late!!! I started to become impatient! At least, you're reimboursing me!
+		You: My pleasure!!! Now I'm going to go play Valorant and rank up to Iron 1.
+		Richard: Dirty noob!
 		do GAME.emit_signal("win")
 	else:
 		do PERSONNAGE.set_state("Richard", "ANGRY")
-		Richard: Espèce de *** tu n'as pas la thune ! Vas travailler sale chômeur !!!
+		Richard: You son of a *** you don't have the money! Go to work you lazy bum!!!
 => END
 
 ~ phone
 
-Richard: Salut. Comment ça va ??
-You: Salut mon vieil ami. J'ai une urgence !!! Question de vie ou de mort !!! Il faut que tu me prêtes une petite somme d'argent.
-Richard: Encore ?!! Tu veux combien ??? Et j'espère que tu me les rembourseras, pas comme la dernière fois.
-You: Tu peux me faire confiance. Pour le montant, je te laisse t'en charger...
-Richard: OK, pas de soucis.
-Notification: Vous venez de recevoir un virement de la part de Richard. 
+Richard: Hello. How are you doing??
+You: Hello my old friend. I have an emergency!!! It's a question of life and death!!! I need some money.
+Richard: Again?!! How much??? And I hope you're going to pay me back, not like the last time.
+You: Trust me. As for how much I need, I'll let you take care of it...
+Richard: OK, no problem.
+Notification: You have just received a transfer from Richard. 
 
 => END
 
 ~ PlusDeTemps
 
-Richard: JE T'AVAIS LAISSÉ 1H !!! Maintenant, c'est trop tard !!!
+Richard: I GAVE YOU 1 HOUR!!! Now, it's too late!!!
 do PERSONNAGE.set_state("Richard", "ANGRY")
 do GAME.emit_signal("kill")
 
